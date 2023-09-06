@@ -1,0 +1,278 @@
+body
+{
+	line-height: 22px;
+	background-color: white;
+}
+
+.term{
+    text-align: center;
+    text-decoration: none;
+    line-height: 150%;
+    color: #0386D0;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; 
+}
+
+.bysign{
+    color: #6B5E5E;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.welcome{
+    height: 35px;
+    color: #000;
+    text-align: center;   
+    font-size: 21px;
+    font-weight: 400;
+    margin: 19px 70px 0px 62px;
+}
+
+.forget-pass{
+    height: 16px;
+    margin-right: 33px;
+    color: #0386D0;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; 
+    text-decoration: none;
+    position: absolute;
+    z-index: 0;
+    margin-top: -50px;
+    right: 0;
+}
+
+.login{
+    width: 102%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    height: 24;
+    width: 24;
+    position: absolute;
+    margin-left: -42px;
+    margin-top: 13px;
+}
+
+.rmbpass{
+    color: #6B5E5E; 
+    margin-left: 10.36px;
+}
+
+.btn-log{
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-login{
+    width: 151px;
+    height: 45px;
+    border-radius: 25px;
+    background: #0386D0;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); 
+    border: none;
+    margin-left: 33px;
+}
+
+.btn-register{
+    text-align: center;
+    width: 151px;
+    height: 45px;
+    border-radius: 25px;
+    background: #FFF;
+    color: #036BB9;
+    border-color: #036BB9;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); 
+    margin-right: 34px;
+    margin-left: 5px;
+}
+
+.addformcheck{
+    width: 24.163px;
+    height: 21px;
+    border: 1px solid #D4C5C5;
+}
+
+.touchid{
+    text-align: center;
+    color: #6B5E5E;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-bottom: 18px;
+}
+
+.connect{
+    height: 20px;
+    color: #747070;
+    font-family: Coda;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 11px;
+}
+
+.height{
+    text-align: center;
+    font-size: 15px;  
+    margin-top: 21px;
+}
+
+.emailpass{
+    margin: 3px 30px 0px 32px;
+}
+
+.emailpass-fz{
+    border-radius: 9px;
+    border: 1px solid #CCC9C9;
+    background: #F9F9F9;
+}
+
+.email{
+    margin-bottom: 22px; 
+}
+
+.khung{
+    text-align: center;
+    width: 100%;
+    height: 896px;
+    flex-shrink: 0; 
+    border-radius: 49px;
+    background: linear-gradient(180deg, #036BB9 0%, #3B5998 100%);
+    box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.25); 
+    padding: 28px 19px 26px 21px;
+}
+
+.drop-shadow{
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.68)); 
+}
+
+div {
+    position: relative;
+    z-index: 1;
+}
+
+.social{
+    text-align: center;
+    padding: 11px;
+}
+
+.btn-social{
+    margin-left: 18px;
+}
+
+.forminput{
+    width: 100%;
+    height: 47px;
+    font-family: Trebuchet MS;
+    padding: 12px 161px 18px 17px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--bs-body-color);
+    border: 1px solid #CCC9C9;
+    border-radius: 9px;
+}
+
+.decoration{
+    text-decoration: none;
+    color: #036BB9;
+}
+
+.formcheck{
+    display: flex;
+    margin-top: 20px;
+    height: 25px;
+    width: 355px;
+}
+
+.form-check-input[type="checkbox"]{
+    width: 24.2px;
+    height: 21px;
+    position: relative;
+    background-color: #FAFAFA;
+    border-color: #B4A8A8;
+}
+.form-check-input:checked[type=checkbox] {
+    background-color: #B4A8A8;
+    border-color: #B4A8A8;
+}
+
+@media (min-width: 1024px) {
+    /* .img-header {
+        width: 600px;
+        height: 500px;
+    } */
+}
+
+.img-header{
+    text-align: center;
+    width: 365;
+    height: 147;
+    margin: 18px 4px 0px 5px;
+}
+
+.item-header{
+    background-color: white;
+    width: 100%;
+    height: 404px;
+    border-radius: 49px 49px 26px 0px;
+    /* padding:18px 4px 0px 5px; */
+    position: relative;
+}
+
+.item-footer{
+    background-color: white;
+    width: 100%;
+    height: 269px;
+    border-radius: 33px 0px 49px 49px;
+    padding-bottom:10px;
+    z-index: auto;
+    bottom: -12px;
+}
+
+.item-header:after{
+    content: "";
+    width: 0;
+	height: 0;
+    top: 403px;
+    left: 0px;
+	border-top: 0px solid transparent;
+	border-left: 86vw solid white;
+	border-bottom: 155px solid transparent;
+    position: absolute;
+    z-index: 0;
+}
+
+.item-footer:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 151px solid transparent;
+    border-right: 86vw solid white;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    bottom: 266px;
+    right: 0px;
+    z-index: 0;
+}
+
