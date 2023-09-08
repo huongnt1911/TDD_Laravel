@@ -1,6 +1,6 @@
-@extends('layouts.task')
+@extends('layouts.app')
 
-@section('index')
+@section('content')
 
     <div class="container">
         <div class="row justify-content-center">

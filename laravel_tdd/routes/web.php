@@ -18,9 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/tasks', [TaskController::class, 'index'])
     ->name('tasks.index');
+
+Route::post('/tasks', [TaskController::class, 'store'])
+    ->name('tasks.store')
+    ->middleware('auth');
+
+Route::get('/tasks/create', [TaskController::class, 'create'])
+    ->name('tasks.create');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
