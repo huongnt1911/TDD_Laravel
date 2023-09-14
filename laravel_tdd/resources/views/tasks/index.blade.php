@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="form-inline" style="text-align: center; margin-top:20px; margin-bottom:20px">
+        <form action="{{route('tasks.index')}}" method="GET">
+            <input type="search" name="content" value="{{request(('key'))}}" placeholder="➜  ~ Thích j tìm đi nhé, iu iu!">
+            <button type="submit" name="btn">Search</button>
+        </form>
+    </div>
+    
 
     <div class="container">
         <div class="row justify-content-center">

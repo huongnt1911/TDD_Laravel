@@ -12,4 +12,8 @@ class Task extends Model
     protected $table = 'tasks';
 
     protected $fillable = ['name', 'content'];
+
+    public function search(string $content){
+        return $this->where('name','like','%'.$content.'%')->latest('id')->paginate(100);
+    }
 }
