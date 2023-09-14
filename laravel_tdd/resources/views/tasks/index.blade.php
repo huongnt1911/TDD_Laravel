@@ -9,15 +9,25 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Content</th>
+                    <th>Action</th>
                 </tr>
                 @foreach($tasks as $task)
                     <tr>
                         <th>{{ $task->id }}</th>
                         <th>{{ $task->name }}</th>
                         <th>{{ $task->content }}</th>
+                        <th>
+                            <form method="POST" action="{{route('tasks.delete',$task->id)}}">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger">Delete</button>
+                                <a href="{{route('tasks.edit', $task->id)}}" class="btn btn-warning">Edit</a>
+                            </form>
+                        </th>                        
                     </tr>
                 @endforeach
             </table>
+            
         </div>
 
     </div>

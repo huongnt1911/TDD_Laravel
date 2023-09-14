@@ -4,7 +4,6 @@ namespace Tests\Feature;
 
 use App\Models\Task;
 use App\Models\User;
-use Illuminate\Http\Response;
 use Tests\TestCase;
 
 class CreateNewTaskTest extends TestCase
@@ -59,8 +58,7 @@ class CreateNewTaskTest extends TestCase
 
     /** @test */
     public function unauthenticated_user_can_not_see_create_task_form_view() {
-        $task = Task::factory()->make(['name' => null])->toArray();
-        $response = $this->from($this->getCreateTaskViewRoute())->post($this->getCreateTaskRoute(), $task);
+        $response = $this->get($this->getCreateTaskViewRoute());
         $response->assertRedirect('/login');
     }
 
