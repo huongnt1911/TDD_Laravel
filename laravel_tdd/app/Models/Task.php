@@ -14,6 +14,6 @@ class Task extends Model
     protected $fillable = ['name', 'content'];
 
     public function search(string $content){
-        return $this->where('name','like','%'.$content.'%')->latest('id')->paginate(100);
+        return $this->where('name','like','%'.$content.'%')->orWhere('content','like','%'.$content.'%')->latest('id')->paginate(10);
     }
 }

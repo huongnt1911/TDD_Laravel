@@ -22,7 +22,16 @@ class CreateTaskRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required'
+            'name' => 'required',
+            'content' => 'required'
+        ];
+    }
+
+    public function messages(): array
+    {
+        return [
+            'name.required' => 'Nhập name đi chòi',
+            'content.required' => 'Content nuaaaa',
         ];
     }
 }

@@ -27,6 +27,8 @@ class TaskController extends Controller
         return view('tasks.index', compact('tasks'));
     }
 
+    
+
     public function store(CreateTaskRequest $request){
         $this->task->create($request->all());
         return redirect()->route('tasks.index');
